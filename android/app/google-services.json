@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "771222115852",
+    "project_id": "gigi-dialogflow-srvu",
+    "storage_bucket": "gigi-dialogflow-srvu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:771222115852:android:ade91e2144475bdc2e0029",
+        "android_client_info": {
+          "package_name": "com.example.flutter_signin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "771222115852-0spsqq77auvien6omcp52gca4no5d0vg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNeLlrq6RB9X-32lulo4GRrcgQhrcrMJ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "771222115852-0spsqq77auvien6omcp52gca4no5d0vg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "771222115852-a4j8j26tn3tpsd0a0b9uv5v98vsaitas.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterSignin.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:771222115852:android:7fa1ebdf9c98076d2e0029",
+        "android_client_info": {
+          "package_name": "com.example.ios_cupertino_store"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "771222115852-0spsqq77auvien6omcp52gca4no5d0vg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNeLlrq6RB9X-32lulo4GRrcgQhrcrMJ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "771222115852-0spsqq77auvien6omcp52gca4no5d0vg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "771222115852-a4j8j26tn3tpsd0a0b9uv5v98vsaitas.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterSignin.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
