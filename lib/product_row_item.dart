@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:ios_cupertino_store/product_details_view.dart';
 import 'package:provider/provider.dart';
 
 import 'model/app_state_model.dart';
@@ -36,6 +37,13 @@ class ProductRowItem extends StatelessWidget {
           ),
         ),
         leadingSize: 68,
+        onTap: () => {
+          Navigator.pushNamed(
+                context,
+                ProductItemDetailsView.routeName,
+                arguments: product
+              ),
+        },
         title: Text(
           product.name,
           style: Styles.productRowItemName,

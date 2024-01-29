@@ -119,7 +119,7 @@ class _ShoppingCartTabState extends State<ShoppingCartTab> {
           //     padding: const EdgeInsets.symmetric(horizontal: 16),
           //     child: _buildLocationField(),
           //   );
-          // case 3: 
+          // case 3:
           //   return Padding(
           //     padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
           //     child: _buildDateAndTimePicker(context),
@@ -279,9 +279,40 @@ class ShoppingCartItem extends StatelessWidget {
           '${formatter.format(product.price)}',
           style: Styles.productRowItemPrice,
         ),
-        trailing: Text(
-          formatter.format(quantity * product.price),
-          style: Styles.productRowItemName,
+        trailing: Row(
+          children: [
+            CupertinoButton(
+              padding: EdgeInsets.zero,
+              onPressed: () {
+                final model =
+                    Provider.of<AppStateModel>(context, listen: false);
+                model.removeItemFromCart(product.id);
+              },
+              child: const Icon(
+                CupertinoIcons.minus_circled,
+                semanticLabel: 'Remove',
+              ),
+            ),
+            Text(
+              '$quantity'
+            ),
+            CupertinoButton(
+              padding: EdgeInsets.zero,
+              onPressed: () {
+                final model =
+                    Provider.of<AppStateModel>(context, listen: false);
+                model.addProductToCart(product.id);
+              },
+              child: const Icon(
+                CupertinoIcons.plus_circled,
+                semanticLabel: 'Add',
+              ),
+            ),
+            Text(
+              formatter.format(quantity * product.price),
+              style: Styles.productRowItemName,
+            ),
+          ],
         ),
       ),
     );
